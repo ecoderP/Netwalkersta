@@ -244,14 +244,31 @@ main {
 }
 
 /*-- Side Menu --*/
+
 .side-menu {
     position: absolute;
+    overflow-y: overlay;
     width: 347px;
     height: 874px;
     left: 0px;
     top: 157px;
     background: #FFFFFF;
     box-shadow: 6px -5px 16px -5px rgba(0, 0, 0, 0.25);
+    max-height: 780px;
+}
+::-webkit-scrollbar{
+    display: block;
+    width: 12px;
+    margin-right: 3px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #C4C4C4;
+    border-right: 3px solid #fff;
+    border-left: none;
+    border-bottom: 200px solid #fff;
 }
 
 .side-menu ul {
@@ -323,12 +340,14 @@ li .menu-list-icon {
 
 /*--Dropdown Menu for Inventory --*/
 .inventory-dropdown {
+    position: absolute;
     width: 347px;
     margin-top: 18px;
     margin-left: -40px;
     display: none;
     flex-direction: column;
     align-items: center;
+    z-index: 999;
 }
 
 .show {
