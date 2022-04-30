@@ -13,6 +13,6 @@ Figma Design by Netwalker
 
 The project was completed in a single weekend.
 
-Tech used: HTML, CSS and Javascript.
+Tech used: HTML, CSS, Javascript and Figma
 
-See the completed work here: 
+See the completed work here:  https://netwalkerstar.netlify.app/
